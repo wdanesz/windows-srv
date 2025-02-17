@@ -129,8 +129,8 @@ a Fusimisi Technologies-nál. Ennek a problémának a megoldására be fogod ál
 
         Adminok Jogosultságainak Beállítása a Jelszavak Megtekintéséhez:
 
-        A következő parancsot használva adjon jogosultságot a "fusimisi-helpdesk" (vagy a domain admins-nak) csoportnak
-        (vagy bármely más megadott csoportnak), hogy megtekinthessék a helyi adminisztrátori jelszavakat.
+        A következő parancsot használva adjon jogosultságot a "fusimisi-helpdesk" csoportnak
+        (vagy bármely más megadott csoportnak pl Domain Admins), hogy megtekinthessék a helyi adminisztrátori jelszavakat.
 
         Powershell
 
