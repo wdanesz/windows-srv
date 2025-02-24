@@ -208,9 +208,10 @@ Emellett felelős vagy a kudarcálló klaszter konfigurációjának tervezésé�
 
         Klaszter Beállításainak Konfigurálása
         
-        Adj meg egy nevet a klaszternek, és válaszd ki az iSCSI lemezeket, amelyeket a klaszter használni fog.
+        Adj meg egy nevet, illetve IP címet a klaszternek.
         Kövesd a varázsló utasításait a klaszter beállításainak konfigurálásához.
 
         Validálás és Létrehozás
         
         Futass egy klaszter-validálást, ha a varázsló kéri. Ha minden teszt sikeres, folytasd a klaszter létrehozását a "Finish" gombra kattintva.
+        Ha a varázsló sikeresen lefutott, és létrejötta klaszter
