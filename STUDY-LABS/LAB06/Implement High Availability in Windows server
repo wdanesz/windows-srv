@@ -214,4 +214,14 @@ Emellett felelős vagy a kudarcálló klaszter konfigurációjának tervezésé�
         Validálás és Létrehozás
         
         Futass egy klaszter-validálást, ha a varázsló kéri. Ha minden teszt sikeres, folytasd a klaszter létrehozását a "Finish" gombra kattintva.
-        Ha a varázsló sikeresen lefutott, és létrejötta klaszter
+        
+        Ha a varázsló sikeresen lefutott, és létrejött a klaszter, adjuk hozzá a diszkeket mint klaszter erőforrás.
+        A frissen létrejött klaszterünket kibontva a Storage > Disks alatt hozzá tudjuk adni a diszkeket az Add Disk segítségével.
+
+    4. Lépés
+
+        A létrehozott klaszter tesztelése
+
+        A Disks menü alatt figyeljük meg, hogy melyik szerverünk birtokolja a diszkeket (Owner Node)        
+        A klaszterünk Nodes pontja alatt megtalálható a két klasztertagunk, a diszkeket birtokló nodeot tegyük paused állapotba a pause menü Drain Roles funkciójával.
+        Ezzel elérjük, hogy a diszkjeink a másik node-ra vándololjanak át, és ott legyenek elérhetőek. Hasoló procedúra lépne életbe a valóságban is egy esetleges meghibásodásnál.
