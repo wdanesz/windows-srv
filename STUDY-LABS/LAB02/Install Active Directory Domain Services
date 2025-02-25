@@ -15,7 +15,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
     1. lépés
     
-        Szerverkezelő indítása: Nyisd meg a Szerverkezelőt (Server Manager) a Windows Serveren.
+        Szerverkezelő indítása: Nyisd meg a Szerverkezelőt (Server Manager) a DC1 Windows Serveren.
 
         Szerepkörök és szolgáltatások hozzáadása: Kattints a "Szerepkörök és szolgáltatások hozzáadása" (Add Roles and Features) lehetőségre.
 
@@ -163,7 +163,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
 3. feladat Az Active Directory Domain Services Szerepkör Telepítése Powershell-en keresztül
 
-    1. Lépés: Windows PowerShell indítása
+    1. Lépés: Windows PowerShell indítása DC2-es szerveren
 
         Az Active Directory Domain Services szerepkör és a domain controller szükséges funkcióinak telepítéséhez
         használd az Install-WindowsFeature cmdlet-et.
