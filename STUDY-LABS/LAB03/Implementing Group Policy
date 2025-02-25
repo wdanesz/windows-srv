@@ -77,7 +77,9 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
 
 2. feladat Központi házirend tároló létrehozása
 
-    1. Lépés: ADMX és ADML Fájlok Letöltése
+    Az 1. illetve a 2. lépés opcionális, a kicsomagolt állományok megtalálhatóak a "\\192.168.34.230\share\Office admin templates" mappa alatt.
+
+    1. Lépés: ADMX és ADML Fájlok Letöltés
 
         Látogass el a Microsoft hivatalos letöltőközpontjába, és keresd meg az aktuális Microsoft Office verzióhoz tartozó ADMX/ADML sablonfájlokat. 
         Töltsd le a csomagot a helyi gépedre.
@@ -91,7 +93,7 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
 
         Másold át az ADMX fájlokat a Domain Controller \\Fusimisi.local\SYSVOL\Fusimisi.local\Policies\PolicyDefinitions mappájába.
 
-        Az ADML fájlokat pedig az en-US mappába kell helyezni ezen belül, 
+        Az ADML fájlokat (\admx\en-us) pedig az en-US mappába kell helyezni ezen belül, 
         tehát \\Fusimisi.local\SYSVOL\Fusimisi.local\Policies\PolicyDefinitions\en-US útvonalon.
 
     4. Lépés: Group Policy Objektum Létrehozása
