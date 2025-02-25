@@ -163,7 +163,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
 3. feladat Az Active Directory Domain Services Szerepkör Telepítése Powershell-en keresztül
 
-    1. Lépés: Windows PowerShell indítása DC2-es szerveren
+    1. Lépés: Windows PowerShell indítása a DC2-es szerveren
 
         Az Active Directory Domain Services szerepkör és a domain controller szükséges funkcióinak telepítéséhez
         használd az Install-WindowsFeature cmdlet-et.
