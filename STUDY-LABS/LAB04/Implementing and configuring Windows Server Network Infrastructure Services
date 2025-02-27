@@ -4,10 +4,10 @@ Labor megoldásához szükséges idő: 60 perc
 
 Labor scenario:
 
-A Fusimisi Technologies Kft. egy nagy vállalat, melynek összetett igényei vannak a hálózati szolgáltatások területén.
+A Contoso Technologies Kft. egy nagy vállalat, melynek összetett igényei vannak a hálózati szolgáltatások területén.
 
 Ezeknek az igényeknek a kielégítése érdekében telepíteni és konfigurálni fogod a DHCP-t úgy, hogy az magas rendelkezésre állású legyen,
-ezzel biztosítva a szolgáltatás elérhetőségét. Emellett DNS-t is beállítasz úgy, hogy a Trey Research – a Fusimisi Technologies Kft. 
+ezzel biztosítva a szolgáltatás elérhetőségét. Emellett DNS-t is beállítasz úgy, hogy a Trey Research – a Contoso Technologies Kft. 
 egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
 1. feladat DHCP Szerver Role Telepítése Grafikus Felhasználói Felületen (GUI)
