@@ -4,14 +4,14 @@ Labor megoldásához szükséges idő: 60 perc
 
 Labor scenario:
 
-A Fusimisi Technologies Kft., egy innovatív vállalat, amely folyamatosan törekszik arra, hogy optimalizálja működését és növelje hatékonyságát.
+A Contoso Technologies Kft., egy innovatív vállalat, amely folyamatosan törekszik arra, hogy optimalizálja működését és növelje hatékonyságát.
 Ennek részeként a vállalat döntött úgy, hogy a raktárlogisztikai szoftverét egy terminál szerveres
 környezetben kívánja elérhetővé tenni a felhasználók számára, RemoteApp-on keresztül.
 
 Ez lehetővé teszi a felhasználók számára, hogy bárhonnan, bármilyen eszközről hozzáférjenek a szoftverhez,
 így növelve a rugalmasságot és csökkentve az infrastrukturális költségeket.
 
-Te, mint a Fusimisi Technologies Kft. tapasztalt rendszermérnöke, azt a feladatot kaptad, hogy tervezd meg és implementáld az RDS
+Te, mint a Contoso Technologies Kft. tapasztalt rendszermérnöke, azt a feladatot kaptad, hogy tervezd meg és implementáld az RDS
 (Remote Desktop Services) környezetet Windows Server alapokon.
 
 Az RDS környezetnek támogatnia kell a RemoteApp technológiát, ami lehetővé teszi a vállalat számára,
