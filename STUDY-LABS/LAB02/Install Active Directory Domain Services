@@ -131,7 +131,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
         CA Típusának Kiválasztása
         
-        Válaszd az "Enterprise CA" lehetőséget, mivel a CA-t egy domain vezérlőn telepíted.
+        Válaszd az "Enterprise CA" lehetőséget.
 
         CA Telepítés
         
