@@ -5,7 +5,7 @@ Labor megoldásához szükséges idő: 60 perc
 Labor scenario: 
 
 Jelenleg ugyanaz a helyi adminisztrátori fiókjelszó van használva az összes szerveren és munkaállomáson
-a Fusimisi Technologies-nál. Ennek a problémának a megoldására be fogod állítani és telepíteni a LAPS-t 
+a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod állítani és telepíteni a LAPS-t 
 (Local Administrator Password Solution - Helyi Adminisztrátori Jelszó Megoldás).
 
 1. feladat LAPS Telepítőfájl Letöltése és Megosztása az FS1-en
