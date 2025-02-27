@@ -4,13 +4,13 @@ Labor megoldásához szükséges idő: 60 perc
 
 Labor scenario:
 
-A Fusimisi Technologies egy globális mérnöki és gyártó vállalat, melynek központja Budapesten, Magyarországon található.
+A Contoso Technologies egy globális mérnöki és gyártó vállalat, melynek központja Budapesten, Magyarországon található.
 
 Az IT iroda és adatközpont is Budapesten helyezkedik el, hogy támogassa a budapesti telephelyet és a többi helyszínt.
 
-Fusimisi Technologies nemrégiben telepített egy Windows Server szerver- és kliensinfrastruktúrát.
+Contoso Technologies nemrégiben telepített egy Windows Server szerver- és kliensinfrastruktúrát.
 
-Tekintettel arra, hogy számos fizikai szerver jelenleg alulhasznált a Fusimisi Technologies-nál, 
+Tekintettel arra, hogy számos fizikai szerver jelenleg alulhasznált a Contoso Technologies-nál, 
 a vállalat tervezi a virtualizáció bővítését a környezet optimalizálása érdekében. 
 
 Ennek eredményeképpen úgy döntesz, hogy egy koncepcióigazolást (proof of concept, PoC) hajtasz végre annak értékelésére,
