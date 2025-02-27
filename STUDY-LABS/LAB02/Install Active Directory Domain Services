@@ -4,12 +4,12 @@ Labor megoldásához szükséges idő: 60 perc
 
 Labor scenario:
 
-A Fusimisi Technologies, egy budapesti központú globális mérnöki és gyártó vállalat, eddig nem használt központi identitáskezelési megoldást.
+A Contoso Technologies, egy budapesti központú globális mérnöki és gyártó vállalat, eddig nem használt központi identitáskezelési megoldást.
 
 Annak érdekében, hogy hatékonyabban kezeljék a felhasználói azonosítókat és hozzáférés-kezelést, úgy döntöttek,
 hogy bevezetik az Active Directory Domain Services (AD DS) szolgáltatást. 
 
-Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telepítése és konfigurálása a Fusimisi Technologies infrastruktúrájában.
+Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telepítése és konfigurálása a Contoso Technologies infrastruktúrájában.
 
 1. feladat Az Active Directory Domain Services Szerepkör Telepítése
 
@@ -32,7 +32,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
         Promóció domain controllerre: A telepítés után a Szerverkezelőben kattints a sárga figyelmeztető jelre,
         és válaszd a "Promote this server to a domain controller" lehetőséget.
 
-        Új erdő létrehozása: Ha még nincs AD DS környezeted, válaszd az "Add a new forest" opciót és adj meg egy domain nevet (pl. fusimisi.local).
+        Új erdő létrehozása: Ha még nincs AD DS környezeted, válaszd az "Add a new forest" opciót és adj meg egy domain nevet (pl. Contoso.local).
 
         Domain Controller beállítások: Állítsd be a DSRM (Directory Services Restore Mode) jelszót,
         ami a domain controller biztonsági módjához szükséges.
@@ -48,25 +48,25 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
         Nyisd meg az "Active Directory Users and Computers" (ADUC) eszközt.
 
-        Kattints jobb gombbal a domainre (pl. fusimisi.local), és válaszd a "New" > "Organizational Unit" opciót.
+        Kattints jobb gombbal a domainre (pl. Contoso.local), és válaszd a "New" > "Organizational Unit" opciót.
 
-        Adj nevet az OU-nak, pl. "FUSIMISI-BUD", és ellenőrizd a "Protect container from accidental deletion" opciót. Kattints az "OK" gombra.
+        Adj nevet az OU-nak, pl. "Contoso-BUD", és ellenőrizd a "Protect container from accidental deletion" opciót. Kattints az "OK" gombra.
 
-        Sub-OU-k Létrehozása a FUSIMISI-BUD alatt
+        Sub-OU-k Létrehozása a Contoso-BUD alatt
 
-        Ismételd meg a fenti lépéseket a "Computers", "Groups", és "Users" sub-OU-k létrehozásához a "FUSIMISI-BUD" OU-n belül.
+        Ismételd meg a fenti lépéseket a "Computers", "Groups", és "Users" sub-OU-k létrehozásához a "Contoso-BUD" OU-n belül.
 
         DOMAINNÉV-GYOR OU Létrehozása
 
-        Kövesd az első lépést, de az OU neve legyen "FUSIMISI-GYOR".
+        Kövesd az első lépést, de az OU neve legyen "Contoso-GYOR".
 
-        Sub-OU-k Létrehozása a FUSIMISI-GYOR alatt
+        Sub-OU-k Létrehozása a Contoso-GYOR alatt
 
-        Ismételd meg a fenti lépéseket a "Computers", "Groups", és "Users" sub-OU-k létrehozásához a "FUSIMISI-GYOR" OU-n belül.
+        Ismételd meg a fenti lépéseket a "Computers", "Groups", és "Users" sub-OU-k létrehozásához a "Contoso-GYOR" OU-n belül.
 
         Felhasználói Fiók Létrehozása
 
-        Kattints jobb gombbal a "Users" sub-OU-ra a "FUSIMISI-BUD" vagy "FUSIMISI-GYOR" alatt, attól függően, hol szeretnéd létrehozni a felhasználót.
+        Kattints jobb gombbal a "Users" sub-OU-ra a "Contoso-BUD" vagy "Contoso-GYOR" alatt, attól függően, hol szeretnéd létrehozni a felhasználót.
 
         Válaszd a "New" > "User" opciót.
 
@@ -76,7 +76,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
         Csoport Létrehozása
 
-        Kattints jobb gombbal a "Groups" sub-OU-ra a "FUSIMISI-BUD" OU-n belül.
+        Kattints jobb gombbal a "Groups" sub-OU-ra a "Contoso-BUD" OU-n belül.
 
         Válaszd a "New" > "Group" opciót.
 
