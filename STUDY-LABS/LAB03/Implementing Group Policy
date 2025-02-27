@@ -4,7 +4,7 @@ Labor megoldásához szükséges idő: 60 perc
 
 Labor scenario:
 
-A Fusimisi Technologies egy gyorsan növekvő globális mérnöki és gyártó vállalat, melynek központja Budapesten található.
+A Contoso Technologies egy gyorsan növekvő globális mérnöki és gyártó vállalat, melynek központja Budapesten található.
 
 A vállalat kiemelt figyelmet fordít az információs technológiai infrastruktúra biztonságára és hatékonyságára. 
 
@@ -17,7 +17,7 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
 
         Nyisd meg a Group Policy Management Console-t (GPMC).
 
-        Kattints a domain nevére (pl. fusimisi.local), keresd meg és kattints jobb gombbal a "Computers" OU-ra.
+        Kattints a domain nevére (pl. Contoso.local), keresd meg és kattints jobb gombbal a "Computers" OU-ra.
 
         Válaszd a "Create a GPO in this domain, and Link it here..." opciót.
 
