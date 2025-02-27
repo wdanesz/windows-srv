@@ -4,7 +4,7 @@ Labor megoldásához szükséges idő: 60 perc
 
 Labor scenario:
 
-A Fusimisi Technologies Kft-nél implementálni kell a Storage Spaces funkciót a Windows Server szervereken a tároláshoz való
+A Contoso Technologies Kft-nél implementálni kell a Storage Spaces funkciót a Windows Server szervereken a tároláshoz való
 hozzáférés egyszerűsítése és a tárolási szintű redundancia biztosítása érdekében.
 
 A vezetőség azt szeretné, hogy teszteld az Adat Deduplikációt a tárhely megtakarítása érdekében.
