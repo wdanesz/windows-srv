@@ -109,7 +109,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
 
         Itt 192.168.0.1 az az IP-cím, amit a NAT gatewayként használsz, és 24 a hálózati maszk hossza (azaz /24).
 
-        Végül hozz létre egy NAT szabályt, amely összeköti a virtuális hálózatot az internettel:
+        Végül hozz létre egy NAT szabályt:
 
         New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.0.0/24
 
