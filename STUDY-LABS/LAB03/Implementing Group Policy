@@ -91,10 +91,10 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
 
     3. Lépés: Fájlok Másolása a Domain Controller-re
 
-        Másold át az ADMX fájlokat a Domain Controller \\Fusimisi.local\SYSVOL\Fusimisi.local\Policies\PolicyDefinitions mappájába.
+        Másold át az ADMX fájlokat a Domain Controller \\Contoso.local\SYSVOL\Contoso.local\Policies\PolicyDefinitions mappájába.
 
         Az ADML fájlokat (\admx\en-us) pedig az en-US mappába kell helyezni ezen belül, 
-        tehát \\Fusimisi.local\SYSVOL\Fusimisi.local\Policies\PolicyDefinitions\en-US útvonalon.
+        tehát \\Contoso.local\SYSVOL\Contoso.local\Policies\PolicyDefinitions\en-US útvonalon.
 
     4. Lépés: Group Policy Objektum Létrehozása
 
@@ -127,7 +127,7 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
 
         Nyisd meg a Certification Authority konzolt a CA szerveren.
 
-        Kattints jobb gombbal a tanúsítványhatóság nevére (pl. Fusimisi Technologies CA),
+        Kattints jobb gombbal a tanúsítványhatóság nevére (pl. Contoso Technologies CA),
         és válaszd a Properties lehetőséget.
 
         A General fülön kattints a View Certificate gombra.
@@ -145,7 +145,7 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
         Nyisd meg a Group Policy Management konzolt (GPMC.msc) egy domain controlleren vagy egy olyan gépen,
         ahol telepítve van az RSAT (Remote Server Administration Tools).
 
-        Bontsd ki a domain struktúrát, kattints jobb gombbal a domain nevére (pl. fusimisi.local),
+        Bontsd ki a domain struktúrát, kattints jobb gombbal a domain nevére (pl. Contoso.local),
         és válaszd a Create a GPO in this domain, and Link it here... opciót.
 
         Adj nevet az új GPO-nak, például "CA Certificate Distribution Policy".
