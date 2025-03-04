@@ -184,9 +184,9 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
     4. Lépés
     
-        Conditionális Forwarder Konfigurálása
+        Conditional Forwarder Konfigurálása
 
-        Új Conditionális Forwarder Létrehozása
+        Új Conditional Forwarder Létrehozása
 
         A DNS Manager-ben kattints jobb gombbal a Conditional Forwarders-ra, és válaszd a New Conditional Forwarder lehetőséget.
 
