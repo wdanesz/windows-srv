@@ -272,7 +272,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         Ezután kattints jobb gombbal újra a VM-re, és válaszd a "Connect" opciót, hogy megnyisd a VM konzolt, 
         ahol követheted az operációs rendszer telepítési folyamatát.
 
-    11. Lépés: Ugyanaz, mint a 3. feladatban, annyi módosítással, hogy Server Core verziót kell telepíteni.
+    11. Lépés: Ugyanaz, mint a 3. feladatban.
 
 5. feladat
 
