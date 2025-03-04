@@ -69,29 +69,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
 
         Folytasd a varázsló utasításainak követését, és fejezd be a Hyper-V telepítését. Indítsd újra a szervert, ha szükséges.
 
-2. feladat Nested virtualizáció konfigurálása
-
-    1. Lépés: A Gép Hosztnevének Lekérdezése
-
-        Nyisd meg a Start menüt és keress rá a Powershell-re, majd kattints a jobb egérgombbal
-        a Powershell alkalmazásra és válaszd a futtatás rendszergazdaként opciót.
-        
-        A gép hosztnevének lekérdezéséhez futtasd a következő parancsot:
-
-        Get-ComputerInfo | Select-Object CsName vagy hostname
-
-        Ezek a parancsok visszaadják a gép hosztnevét, amit felhasználhatsz a további konfiguráció során.
-
-    2. Lépés: Nested Virtualizáció Bekapcsolása
-
-        Miután megvan a hosztgép neve, a nested virtualizáció bekapcsolásához használd a következő parancsot,
-        cseréld le a "VMNév" részt a nested virtualizációt engedélyezni kívánt VM nevére:
-
-        Set-VMProcessor -VMName "VMNév" -ExposeVirtualizationExtensions $true
-
-        Ez a parancs engedélyezi a virtualizációs kiterjesztéseket a megadott VM-ben, lehetővé téve egy másik VM futtatását belül.
-
-    3. Lépés: NAT Alapú Hálózat Létrehozása
+2. feladat NAT Alapú Hálózat Létrehozása
 
         A NAT hálózat lehetővé teszi a VM-ek számára, hogy egy privát hálózaton keresztül osszák meg a host gép IP-címét.
 
