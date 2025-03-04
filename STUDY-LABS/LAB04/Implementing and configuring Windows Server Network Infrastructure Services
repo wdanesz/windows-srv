@@ -145,7 +145,7 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
         
         A varázslóban válaszd a Primary Zone típust, és ha szükséges, jelöld be az Store the zone in Active Directory (csak AD integrált zónák esetén) opciót.
         
-        Adj meg egy nevet az új zónának, pl. fusimisi.internal, és kövesd a további lépéseket a zóna létrehozásához.
+        Adj meg egy nevet az új zónának, pl. Contoso.internal, és kövesd a további lépéseket a zóna létrehozásához.
 
     2. Lépés: 
     
@@ -153,13 +153,13 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
         Navigálj az Új Zónához
 
-        A DNS Manager-ben nyisd meg a frissen létrehozott fusimisi.internal zónát.
+        A DNS Manager-ben nyisd meg a frissen létrehozott Contoso.internal zónát.
 
         Új A Rekord Hozzáadása
         
         Kattints jobb gombbal a zóna nevére, és válaszd a New Host (A or AAAA) lehetőséget.
 
-        A Name mezőbe írd be, hogy testapp. Az IP address mezőbe írd be a kívánt IP címet, amelyre a testapp.fusimisi.internal névnek mutatnia kell.
+        A Name mezőbe írd be, hogy testapp. Az IP address mezőbe írd be a kívánt IP címet, amelyre a testapp.Contoso.internal névnek mutatnia kell.
         Állítsd a TTL értékét 600 másodpercre.
 
         Beállítások Mentése
@@ -192,7 +192,7 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
         Beállítások Konfigurálása
 
-        Adj meg egy domain nevet, amelyre a conditionális forwarder alkalmazandó, és add meg a másik DC (Domain Controller) IP címét,
+        Adj meg egy domain nevet, amelyre a conditionális forwarder alkalmazandó pl trey.com, és add meg a másik DC (Domain Controller) IP címét,
         ahova a lekérdezéseket továbbítani szeretnéd.
 
         Beállítások Mentése
