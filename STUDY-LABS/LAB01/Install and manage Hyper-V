@@ -52,7 +52,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
 
         Nyisd meg a Fájlkezelőt (File Explorer), navigálj az "E:" meghajtóhoz, és hozz létre egy új mappát "Hyper-V" néven.
 
-        A "Hyper-V" mappán belül hozz létre két további mappát: "Hyper-V Virtual Machines" és "Hyper-V Virtual Machine Configuration".
+        A "Hyper-V" mappán belül hozz létre egy további mappát: "Hyper-V Virtual Machines"
 
     4. Lépés: 
 
