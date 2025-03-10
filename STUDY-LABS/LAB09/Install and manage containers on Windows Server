@@ -61,11 +61,19 @@ Labor megoldásához szükséges idő: 15 perc
 
         Most már készen állsz arra, hogy futtass egy "Hello World" konténert, ami igazolja, hogy a Docker helyesen van telepítve és működik.
 
+        Normál esetben ehhez elég lenne a docker run hello-world parancs futtatása, jelen esetben a Z: meghajtón lévő hello-worldcontainerimage.tar file-ra lesz szükségünk, másoljuk át a szerverünkre egy tetszőleges helyre.
+
         Nyisd meg ismét a PowerShell-t rendszergazdaként.
 
-        Futtasd a következő parancsot egy "Hello World" konténer futtatásához:
+        Futtasd a következő parancsot egy "Hello World" konténer importálásához:
 
-        docker run hello-world
+        docker load -i <path and filename>
+
+        Például docker load -i C:\temp\hello-worldcontainerimage.tar
+
+        Ha sikeresen lefutott a paracs a docker images paranccsal megnézhetjük az eredményét.
+
+        Ezután a docker run hello-world paranccsal el tudunk indítani egy konténert a konténer image-ből.
 
         Ha minden rendben ment, látnod kellene egy üzenetet, ami megerősíti, hogy a Docker helyesen működik,
         és a "Hello World" konténer fut.
