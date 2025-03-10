@@ -6,7 +6,7 @@ Labor megoldásához szükséges idő: 15 perc
 
     1. lépés: Szerepkörök és szolgáltatások telepítése
 
-        Először telepítsd a szükséges szerepköröket és szolgáltatásokat.
+        Először telepítsd a szükséges szerepköröket és szolgáltatásokat. (FS1 vagy FS2 szerverre)
 
         Nyisd meg a Szerverkezelőt (Server Manager).
 
@@ -27,13 +27,17 @@ Labor megoldásához szükséges idő: 15 perc
     2. lépés Docker telepítése
 
         A Docker telepítése PowerShell használatával történik.
+        Normál esetben az alábbi paranccsal:
+        Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -OutFile install-docker-ce.ps1
+        .\install-docker-ce.ps1
+
+        Mivel a laborkörnyezetben nincs internetelérés, ezért a Z: meghajtóra előkészített offline csomagot, és preparált telpítőt fogjuk használni.
+
+        Másold a célszerverre a Z: meghasjtóról a docker-17.06.2-ee-7.zip és install-docker-ce.ps1 fileokat. Mindenképp egy mappába tedd őket.
 
         Nyisd meg a PowerShell-t rendszergazdaként.
 
-        Futtasd a következő parancsot a Docker telepítéséhez:
-
-        Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -OutFile install-docker-ce.ps1
-        .\install-docker-ce.ps1
+        Navigálj a mappába ahol az átmásolt fileok találkatóak, majd a ./install-docker-ce.ps1 parancs segítségével futtasd a ps1 filet.
 
         Indítsd újra a szervert a változások érvényesítéséhez:
 
