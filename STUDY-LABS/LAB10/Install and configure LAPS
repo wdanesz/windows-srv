@@ -43,7 +43,9 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
         cmd vagy powershell
 
-        Msiexec /i \\FS1\software\LAPS.x64.msi /quiet
+        Msiexec /i \\elérési útvonal\LAPS.x64.msi
+    
+        Például: Msiexec /i \\FS1\software\LAPS.x64.msi
 
     3. lépés: GPO Létrehozása és Konfigurálása a LAPS Kliens Telepítéséhez
 
