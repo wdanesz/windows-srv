@@ -87,7 +87,7 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
         Kapcsolat Tesztelése
         
         A DC1 vagy bármely más szerver/domain munkaállomásról, nyissuk meg a webböngészőt és
-        írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.fusimisi.local/RDWeb).
+        írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.Contoso.local/RDWeb).
         
         Próbáljunk meg bejelentkezni és elérni a publikált alkalmazásokat vagy asztalokat
 
@@ -128,7 +128,7 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
 
         Az RDS1 szerveren, használjuk a "RD Web Access" szolgáltatást a változások ellenőrzésére.
 
-        Nyissuk meg a webböngészőt, és írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.fusimisi.local/RDWeb).
+        Nyissuk meg a webböngészőt, és írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.Contoso.local/RDWeb).
 
         Jelentkezzünk be egy olyan felhasználóval, aki tagja a "bud-engineers" csoportnak, és ellenőrizzük,
         hogy a Számológép alkalmazás elérhető-e.
