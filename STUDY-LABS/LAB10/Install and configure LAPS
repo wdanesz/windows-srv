@@ -85,7 +85,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
 2. feladat AD schema bővítése
 
-    Miután a GPO és a LAPS telepítése megtörtént a DC1-en és a kliensgépeken a Fusimisi Technologies-nál,
+    Miután a GPO és a LAPS telepítése megtörtént a DC1-en és a kliensgépeken a Contoso Technologies-nál,
     a következő lépés az Active Directory (AD) séma kiterjesztése.
     Ennek a folyamatnak a részeként két specifikus attribútumot adunk hozzá az AD sémához,
     amelyek lehetővé teszik a LAPS által kezelt adminisztrátori jelszavak tárolását és azok lejárati idejének
@@ -131,12 +131,12 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
         Adminok Jogosultságainak Beállítása a Jelszavak Megtekintéséhez:
 
-        A következő parancsot használva adjon jogosultságot a "fusimisi-helpdesk" csoportnak
+        A következő parancsot használva adjon jogosultságot a "Contoso-helpdesk" csoportnak
         (vagy bármely más megadott csoportnak pl Domain Admins), hogy megtekinthessék a helyi adminisztrátori jelszavakat.
 
         Powershell
 
-        Set-AdmPwdReadPasswordPermission -Identity "Computers" -AllowedPrincipals "fusimisi-helpdesk"
+        Set-AdmPwdReadPasswordPermission -Identity "Computers" -AllowedPrincipals "Contoso-helpdesk"
 
         Ezzel a parancsal a megadott csoport tagjai képesek lesznek megtekinteni a "Computers" OU-ban
         található számítógépek helyi adminisztrátori jelszavait.
@@ -163,7 +163,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
         először másolja át az AdmPwd.admx és AdmPwd.adml fájlokat a DC1-en c:\Windows\PolicyDefinitions mappából
         a központi tárolóba. 
         
-        Például: \\fusimisi.local\SYSVOL\Policies\PolicyDefinitions mappába
+        Például: \\Contoso.local\SYSVOL\Policies\PolicyDefinitions mappába
 
     2. lépés: Új GPO Létrehozása:
 
