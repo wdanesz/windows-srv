@@ -25,7 +25,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
         
         Távolítsa el az "Everyone" csoportot.
         
-        Adjon hozzá "Domain Computers" csoportot, és állítson be "Read" (Olvasás) jogosultságot.
+        Adjon hozzá "Domain Computers" (All workstations.... )csoportot, és állítson be "Read" (Olvasás) jogosultságot.
         
         Adjon hozzá "Domain Users" csoportot, és állítson be "Read", "List Content", és "Read & Execute" (Olvasás és Végrehajtás) jogosultságokat.
 
