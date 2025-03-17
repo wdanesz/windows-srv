@@ -56,7 +56,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
         Nyissuk meg a Group Policy Management konzolt a DC1-en.
         
         Navigáljunk a "Forest: YourDomainName, Domains, YourDomainName" útvonalon,
-        keresse meg és kattintson jobb gombbal a "Computers" OU-ra,
+        keresse meg és kattintson jobb gombbal a "Computers" OU-ra, pl:OU=Computers,OU=Contoso-BUD,DC=test,DC=local
         válassza a "Create a GPO in this domain, and Link it here..." opciót.
 
         Nevezzük el a GPO-t, például "LAPS Deployment".
@@ -124,7 +124,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
         Powershell
 
-        Set-AdmPwdComputerSelfPermission -OrgUnit "Computers"
+        Set-AdmPwdComputerSelfPermission -OrgUnit "OU=Computers,OU=Contoso-BUD,DC=test,DC=local"
 
         Ez a parancs engedélyezi a számítógépek számára, hogy frissíthessék saját helyi adminisztrátori jelszavukat
         az Active Directory-ban, valamint beállíthassák a jelszavak lejárati idejét.
@@ -138,7 +138,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
         Powershell
 
-        Set-AdmPwdReadPasswordPermission -Identity "Computers" -AllowedPrincipals "Contoso-helpdesk"
+        Set-AdmPwdReadPasswordPermission -Identity "OU=Computers,OU=Contoso-BUD,DC=test,DC=local" -AllowedPrincipals "Contoso-helpdesk"
 
         Ezzel a parancsal a megadott csoport tagjai képesek lesznek megtekinteni a "Computers" OU-ban
         található számítógépek helyi adminisztrátori jelszavait.
@@ -169,7 +169,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
     2. lépés: Új GPO Létrehozása:
 
-        Kattintson jobb gombbal a "Computers" Szervezeti Egységre (OU) a Group Policy Management-ben,
+        Kattintson jobb gombbal a "Computers" Szervezeti Egységre (OU) (OU=Computers,OU=Contoso-BUD,DC=test,DC=local) a Group Policy Management-ben,
         és válassza az "Új GPO létrehozása ebben a tartományban, és linkelje ide..." opciót.
 
         Nevezze el a GPO-t, például "computers-laps"-nak.
