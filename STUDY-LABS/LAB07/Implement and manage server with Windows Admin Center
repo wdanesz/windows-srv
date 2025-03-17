@@ -10,14 +10,18 @@ Labor megoldásához szükséges idő: 60 perc
 
         Windows Admin Center Letöltése
         
-        Töltsd le a Windows Admin Center telepítőfájlt a Microsoft hivatalos oldaláról vagy megtalálod a Z:\ meghajtón.
+        A telepítő megatálható a Z:\ meghajtón. (WindowsAdminCenter2410.exe)
 
         Telepítés
         
         Indítsd el a letöltött telepítőfájlt, és kövesd a telepítési varázslót.
+
+        Válaszd ki az Express setup telepítési módot
+
+        Majd a Generate a self-signed certificate opciót. A többi lépésben jók az alapértelmezetten kiválasztott oopciók.
         
-        Válaszd ki a telepítés típusát (ajánlott a szerveren történő telepítés),
-        és befejezés után nyisd meg a Windows Admin Centert a megadott URL-en keresztül.
+        
+        Befejezés után nyisd meg a Windows Admin Centert a megadott URL-en keresztül.
 
     2. Lépés
     
@@ -31,7 +35,7 @@ Labor megoldásához szükséges idő: 60 perc
         
         A kezdőlapon kattints az "Add" gombra, válaszd a "Add Server" lehetőséget.
         
-        Add hozzá a domainben lévő szervereket, például az FS1-et és FS2-t, megadva a hosztneveket vagy IP-címeket.
+        Add hozzá a domainben lévő szervereket, például az DC1-et és DC2-t, megadva a hosztneveket vagy IP-címeket.
 
     3. Lépés
     
