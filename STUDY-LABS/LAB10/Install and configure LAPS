@@ -47,6 +47,8 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
     
         Például: Msiexec /i \\FS1\software\LAPS.x64.msi
 
+        Az összes komponenst válasszuk ki a listából.
+
     3. lépés: GPO Létrehozása és Konfigurálása a LAPS Kliens Telepítéséhez
 
         GPO Létrehozása:
