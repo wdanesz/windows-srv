@@ -59,15 +59,9 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
         
         Válasszuk a "Session-based desktop deployment" lehetőséget.
         
-        Az "RD Connection Broker", "RD Web Access" és "RD Session Host" szolgáltatásokhoz adjuk hozzá az RDS1 szerverünket.
+        Az "RD Connection Broker", "RD Web Access" szolgáltatásokhoz adjuk hozzá az RDS1 szerverünket. Az "RD Session Host" szolgáltatásokhoz adjuk hozzá az RDS1, illetve RDS2 szerverünket is. 
         
         Kövessük a további lépéseket a telepítés befejezéséhez. Az utolsó lépésnél kapcsoljuk be az automatikus újraindulást, majd válaszzuk a deploy lehetőséget.
-
-        Másodlagos Szerver (RDS2) - Csak Session Host
-
-        Szerverkezelő és Szerepkörök Telepítése
-        
-        Az Add Roles And Features segítségével most a Role-Based or feature based installation-t válasszuk majd telepítsük a Remote Desktop Servicest, viszont csak az "RD Session Host" szolgáltatást válasszuk ki.
 
 2. feladat: Collection és RemoteApp Létrehozása, Jogosultságok Beállítása
 
