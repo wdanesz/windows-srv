@@ -41,64 +41,45 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
         Válasszuk az ISO fájlt a Windows Server telepítéséhez, és fejezzük be a virtuális gép létrehozását.
 
     2. Lépés
+
+        Telepítsük a Windows Servert, állítsuk be a szükséges alapkonfigurációkat, és léptessük be a szervereket a domainbe.
     
-        RDS Szerepkörök Telepítése és Konfigurálása
+        RDS Szerepkörök Telepítése és Konfigurálása az RDS1 szerveren.
     
         Elsődleges Szerver (RDS1) - Connection Broker, Session Host, Web Szerver
 
-        Windows Server Telepítése és a Domainbe Léptetés
-    
-        Telepítsük a Windows Servert, állítsuk be a szükséges alapkonfigurációkat, és léptessük be a szervereket a domainbe.
+        Adjuk hozzá az RDS2 szerverünket a Manage > Add Server menüpont alatt.
 
         Szerverkezelő és Szerepkörök Telepítése
         
         Nyissuk meg a Szerverkezelőt, válasszuk a "Add Roles and Features" lehetőséget.
         
-        A "Roles" szekción belül válasszuk ki a "Remote Desktop Services" telepítését,
+        Az "Installation type" szekción belül válasszuk ki a "Remote Desktop Services intallation" lehetőséget,
         majd a telepítés típusaként válasszuk a "Standard Deployment" opciót.
         
         Válasszuk a "Session-based desktop deployment" lehetőséget.
         
-        A "Role Services" választónál jelöljük be a "RD Connection Broker", "RD Web Access" és "RD Session Host" szolgáltatásokat.
+        Az "RD Connection Broker", "RD Web Access" és "RD Session Host" szolgáltatásokhoz adjuk hozzá az RDS1 szerverünket.
         
-        Kövessük a további lépéseket a telepítés befejezéséhez.
+        Kövessük a további lépéseket a telepítés befejezéséhez. Az utolsó lépésnél kapcsoljuk be az automatikus újraindulást, majd válaszzuk a deploy lehetőséget.
 
         Másodlagos Szerver (RDS2) - Csak Session Host
 
         Szerverkezelő és Szerepkörök Telepítése
         
-        Ismételjük meg a szerepkör telepítési lépéseket az RDS2 szerveren, de ebben az esetben csak a "RD Session Host" szolgáltatást válasszuk.
+        Az Add Roles And Features segítségével most a Role-Based or feature based installation-t válasszuk majd telepítsük a Remote Desktop Servicest, viszont csak az "RD Session Host" szolgáltatást válasszuk ki.
 
-    3. Lépés
-    
-        RDS Környezet Konfigurálása
+2. feladat: Collection és RemoteApp Létrehozása, Jogosultságok Beállítása
 
-        RDS Környezet Beállítása az Elsődleges Szerveren (RDS1)
-        
-        A Szerverkezelőben, a "Remote Desktop Services" fül alatt konfiguráljuk a deploymentet.
-        Adjuk hozzá az RDS2 szerverünket a Session Host-okhoz a "Servers" menüpont alatt.
-        
-        Állítsuk be a kapcsolati brokert, és konfiguráljuk a web hozzáférést.
+    1. Lépés: Collection készítése
 
-    4. Lépés
-    
-        Tesztelés
+        A Server Managerben a Remote Destop Services alatt a Collections menü alatt, jobb oldalon a Tasks pontot megnyomva vállasszuk a Create Session Collection-t
 
-        Kapcsolat Tesztelése
-        
-        A DC1 vagy bármely más szerver/domain munkaállomásról, nyissuk meg a webböngészőt és
-        írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.Contoso.local/RDWeb).
-        
-        Próbáljunk meg bejelentkezni és elérni a publikált alkalmazásokat vagy asztalokat
-
-2. feladat: RemoteApp Létrehozása és Jogosultságok Beállítása
+        Nevezzük el pl: Coll1-nek.
 
     1. Lépés: Alkalmazás Publikálása a RemoteApp Manager-ben
 
-        Nyissuk meg a Remote Desktop Services főoldalát a Szerverkezelőben (Server Manager).
-
-        Válasszuk a "RemoteApp Programs" menüpontot az "Overview" részen belül,
-        amely megjelenik a Remote Desktop Services szekcióban.
+        Ha elkészült a collection, kattintsunk rá a Collections alatt, majd a Remoteapp Programs alatti Tasks-nál válasszuk a Publish RemoteApp Programs pontot.
 
         Kattintsunk a "Publish RemoteApp Programs" lehetőségre.
 
@@ -114,9 +95,9 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
 
         Kattintsunk rá jobb gombbal, és válasszuk a "Properties" opciót.
 
-        Az "User Assignment" (Felhasználói hozzárendelés) fül alatt adjuk hozzá a "bud-engineers" AD csoportot.
+        Az "User Assignment" (Felhasználói hozzárendelés) fül alatt adjunk hozzá egy csoportot pl: "Domain Admins" AD csoportot.
 
-        A "bud-engineers" csoport kiválasztásával korlátozzuk az alkalmazáshoz való hozzáférést
+        A "Domain Admins" csoport kiválasztásával korlátozzuk az alkalmazáshoz való hozzáférést
         kizárólag ennek a csoportnak a tagjaira.
         
         Megerősítés után zárjuk be az ablakot a "OK" gombbal.
@@ -126,11 +107,11 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
         Győződjünk meg róla, hogy az RDS konfiguráció frissült az újonnan publikált RemoteApp
         és a beállított hozzáférési szabályok alapján.
 
-        Az RDS1 szerveren, használjuk a "RD Web Access" szolgáltatást a változások ellenőrzésére.
+        Bármelyik szerveren pl DC1, használjuk a "RD Web Access" szolgáltatást a változások ellenőrzésére.
 
         Nyissuk meg a webböngészőt, és írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.Contoso.local/RDWeb).
 
-        Jelentkezzünk be egy olyan felhasználóval, aki tagja a "bud-engineers" csoportnak, és ellenőrizzük,
+        Jelentkezzünk be egy olyan felhasználóval, aki tagja a "Domain Admins" csoportnak, és ellenőrizzük,
         hogy a Számológép alkalmazás elérhető-e.
         
         Teszteljük az alkalmazást, hogy biztosítsuk a hozzáférési jogosultságok helyes beállítását.
