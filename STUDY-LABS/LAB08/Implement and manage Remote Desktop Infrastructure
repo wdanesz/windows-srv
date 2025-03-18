@@ -69,7 +69,7 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
 
         A Server Managerben a Remote Destop Services alatt a Collections menü alatt, jobb oldalon a Tasks pontot megnyomva vállasszuk a Create Session Collection-t
 
-        Nevezzük el pl: Coll1-nek.
+        Nevezzük el pl: Coll1-nek. Az alap beállításokon egyedül a User Profile Disks alatt kell módosítanunk, ha be van pipálva, vegyük ki a pipát.
 
     1. Lépés: Alkalmazás Publikálása a RemoteApp Manager-ben
 
