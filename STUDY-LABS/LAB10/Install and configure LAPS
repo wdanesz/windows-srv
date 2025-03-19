@@ -151,7 +151,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
         Powershell
 
-        Find-AdmPwdExtendedRights -Identity "Computers"
+        Find-AdmPwdExtendedRights -Identity "OU=Computers,OU=Contoso-BUD,DC=contoso,DC=local"
 
         Ez a parancs listázza azokat a felhasználókat és csoportokat,
         akik rendelkeznek kiterjesztett jogosultságokkal az adott OU-ra vonatkozóan,
