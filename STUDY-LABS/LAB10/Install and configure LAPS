@@ -197,3 +197,54 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
         Keresse meg és kattintson jobb gombbal a megvizsgálni kívánt számítógépre az "Attributes" (Attribútumok) fülön.
         
         Keressen az ms-Mcs-AdmPwd attribútumra, ami tartalmazza a generált helyi adminisztrátori jelszót.
+
+
+
+On-premises Active Directory-s út (a leggyakoribb)
+1. Séma bővítése – ahogy korábban tárgyaltuk, ez az első, kihagyhatatlan lépés 
+1841
+:
+
+powershell
+
+Update-LapsADSchema -Verbose
+Ehhez Schema Admins és Enterprise Admins tagság szükséges, egy domain controlleren futtatva 
+1842
+.
+
+2. Jogosultság megadása a gépeknek, hogy saját maguk írhassák a jelszót 
+1842
+:
+
+powershell
+
+Set-LapsADComputerSelfPermission -Identity "OU=Munkastaciok,DC=cegneved,DC=local"
+Ez az a lépés, amit sokan kihagynak, majd csodálkoznak, hogy a jelszó nem íródik be – a gépnek explicit jogot kell adni, hogy a saját AD-objektumára írhasson 
+1842
+.
+
+3. GPO létrehozása és a LAPS-beállítások konfigurálása 
+1841
+:
+
+Nyiss meg egy Group Policy Management Console-t, hozz létre egy új GPO-t, és linkeld a menedzselni kívánt gépeket tartalmazó OU-hoz 
+1841
+.
+
+Navigálj ide: Computer Configuration → Policies/Administrative Templates → System → LAPS 
+1839
+.
+
+Kapcsold be a "Configure password backup directory" beállítást, és válaszd "Active Directory" értéket 
+1841
+.
+
+Kapcsold be a "Password Settings" beállítást, és állítsd be a jelszó-komplexitást, hosszát, élettartamát 
+1841
+.
+
+Opcionálisan a "Name of administrator account to manage" beállítással megadhatod, ha nem a beépített Administrator fiókot, hanem egy saját nevű helyi admin-fiókot szeretnél LAPS-szal kezelni 
+1841
+.
+
+4. Ellenőrzés a klienseken – futtasd le a gpupdate /force-ot egy menedzselt gépen, majd nézd meg, megjelent-e a jelszó az AD-ban:
