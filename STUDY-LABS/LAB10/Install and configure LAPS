@@ -248,3 +248,4 @@ Opcionálisan a "Name of administrator account to manage" beállítással megadh
 .
 
 4. Ellenőrzés a klienseken – futtasd le a gpupdate /force-ot egy menedzselt gépen, majd nézd meg, megjelent-e a jelszó az AD-ban:
+Get-LapsADPassword -Identity "GEPNEVE" -AsPlainText
