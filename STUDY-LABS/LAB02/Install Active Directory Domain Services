@@ -215,4 +215,4 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
         Mindkét szerveren a Server Manager Local Server menüpontját választva, majd a Computer name-re kattintva a Change opcióval változtassuk meg a nevet FS1 illetve FS2-re.
         Ha a gépek újraindultak, a fentebbi útvonalon a Member of résznél válasszuk a domaint.
-        Írjuk be a domainnevünket, és a hozzá tartozó admin felhasználónkkal léptessük be őket a domainba.
+        Írjuk be a domainnevünket, és a hozzá tartozó admin felhasználónkkal (domainnév\adminuser) léptessük be őket a domainba.
