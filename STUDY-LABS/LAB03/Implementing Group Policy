@@ -78,7 +78,7 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
 2. feladat Központi házirend tároló létrehozása
 
     Az 1. illetve a 2. lépés opcionális, a kicsomagolt állományok megtalálhatóak az E:\Tools mappa alatt.
-    A mappa elérése a vmekről: \\10.81.168.x\e$\Tools
+    A mappa elérése a vmekről: \\10.81.168.x\c$\Tools
 
     1. Lépés: ADMX és ADML Fájlok Letöltés
 
