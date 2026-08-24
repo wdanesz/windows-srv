@@ -416,3 +416,4 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
 
     11. Lépés: Ugyanaz, mint a 3. feladatban.
 
+Utolsó lépésként minden eddig létrehozott VM-nél a "Settings"-en belül a Processzorszámot egyről kettőre növeld.
