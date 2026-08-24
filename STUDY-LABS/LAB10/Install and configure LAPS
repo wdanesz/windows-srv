@@ -35,7 +35,7 @@ a Contoso Technologies-nál. Ennek a problémának a megoldására be fogod áll
 
     1. lépés: Új GPO Létrehozása:
 
-        Kattintson jobb gombbal a "Computers" Szervezeti Egységre (OU) (OU=Computers,OU=Contoso-BUD,DC=test,DC=local) a Group Policy Management-ben,
+        Kattintson jobb gombbal a "Computers" Szervezeti Egységre (OU) (OU=Computers,OU=BUD,DC=lab,DC=local) a Group Policy Management-ben,
         és válassza az "Új GPO létrehozása ebben a tartományban, és linkelje ide..." opciót.
 
         Nevezze el a GPO-t, például "computers-laps"-nak.
