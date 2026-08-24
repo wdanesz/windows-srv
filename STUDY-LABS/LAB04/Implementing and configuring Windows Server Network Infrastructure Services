@@ -14,7 +14,7 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
     1. lépés
 
-        Szerverkezelő Megnyitása
+        Szerverkezelő Megnyitása DC1-en
 
         Nyisd meg a Szerverkezelőt (Server Manager) az első szerveren, amelyen grafikus felhasználói felület (GUI) áll rendelkezésre.
 
@@ -71,7 +71,7 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
         A varázsló befejezésekor aktiváld a scope-ot, hogy a DHCP szerver elkezdhesse az IP címek kiosztását.
 
-2. feladat DHCP Szerver Role Telepítése és Scope Létrehozása PowerShell Használatával (Nincs GUI)
+2. feladat DHCP Szerver Role Telepítése és Scope Létrehozása PowerShell Használatával (Nincs GUI, DC2)
 
     1. lépés
 
