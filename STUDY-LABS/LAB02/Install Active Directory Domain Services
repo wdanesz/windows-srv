@@ -210,3 +210,9 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
         és megfelelően működik. Ezt megteheted többek között a Get-ADDomainController cmdlet segítségével,
         amely információkat ad vissza az összes elérhető domain controllerről, vagy az Test-ComputerSecureChannel cmdlet-tel,
         amely ellenőrzi a biztonságos csatorna állapotát a domainnel.
+
+    4. Feladat: FS1 és FS2 átnevezése és domainbe léptetése
+
+        Mindkét szerveren a Server Manager Local Server menüpontját választva, majd a Computer name-re kattintva a Change opcióval változtassuk meg a nevet FS1 illetve FS2-re.
+        Ha a gépek újraindultak, a fentebbi útvonalon a Member of résznél válasszuk a domaint.
+        Írjuk be a domainnevünket, és a hozzá tartozó admin felhasználónkkal léptessük be őket a domainba.
