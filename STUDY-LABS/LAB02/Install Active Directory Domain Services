@@ -171,6 +171,9 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
         Windows PowerShell indítása a DC2-es szerveren 
 
+        (Ha szeretnéd, nyugodtan használhatod a grafikus telepítőt is az előtő lépések szerint, kiegészítve:
+        Nem új domaint hozunk létre, hanem meglévő domainhez csatlakozunk.)
+
         Az Active Directory Domain Services szerepkör és a domain controller szükséges funkcióinak telepítéséhez
         használd az Install-WindowsFeature cmdlet-et.
 
