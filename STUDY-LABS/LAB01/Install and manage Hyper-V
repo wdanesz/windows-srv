@@ -153,6 +153,8 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         
         A Hyper-V most létrehozza a "DC1" nevű virtuális gépet a megadott specifikációk alapján.
 
+        Ezután a létrehozott VM-nél a "Settings"-en belül a processzorszámot egyről kettőre növeld.
+
     10. Lépés: Virtuális Gép Indítása
 
         A Hyper-V Managerben, a létrehozott "DC1" virtuális gépre kattintva jobb gombbal, válaszd a "Start" opciót a virtuális gép elindításához.
@@ -265,6 +267,8 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         
         A Hyper-V most létrehozza a "DC2" nevű virtuális gépet a megadott specifikációk alapján.
 
+        Ezután a létrehozott VM-nél a "Settings"-en belül a processzorszámot egyről kettőre növeld.
+
     10. Lépés: Virtuális Gép Indítása
 
         A Hyper-V Managerben, a létrehozott "DC2" virtuális gépre kattintva jobb gombbal, válaszd a "Start" opciót a virtuális gép elindításához.
@@ -335,6 +339,8 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         Ha minden rendben van, kattints a "Finish" gombra.
         
         A Hyper-V most létrehozza a "FS1" nevű virtuális gépet a megadott specifikációk alapján.
+
+        Ezután a létrehozott VM-nél a "Settings"-en belül a processzorszámot egyről kettőre növeld.
 
     10. Lépés: Virtuális Gép Indítása
 
@@ -407,6 +413,8 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         
         A Hyper-V most létrehozza a "FS2" nevű virtuális gépet a megadott specifikációk alapján.
 
+        Ezután a létrehozott VM-nél a "Settings"-en belül a processzorszámot egyről kettőre növeld.
+
     10. Lépés: Virtuális Gép Indítása
 
         A Hyper-V Managerben, a létrehozott "FS2" virtuális gépre kattintva jobb gombbal, válaszd a "Start" opciót a virtuális gép elindításához.
@@ -416,4 +424,4 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
 
     11. Lépés: Ugyanaz, mint a 3. feladatban.
 
-Utolsó lépésként minden eddig létrehozott VM-nél a "Settings"-en belül a Processzorszámot egyről kettőre növeld.
+
