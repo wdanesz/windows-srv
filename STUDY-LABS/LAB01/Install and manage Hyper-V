@@ -424,7 +424,9 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
 
     11. Lépés: Ugyanaz, mint a 3. feladatban.
 
-Háózati beállítások együtt:
+Hálózati, és egyéb beállítások együtt:
 
         Statikus IP-címek kiosztása
         ipv6 kikapcsolása
+        Frissítések telepítése
+        
