@@ -188,7 +188,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
         Mivel ez egy másodlagos DC lesz egy már létező domainben, az Install-ADDSDomainController cmdlet-et kell használnod.
 
         Install-ADDSDomainController `
-            -DomainName "Contoso.local" `
+            -DomainName "Contoso.local" `  <---ide a DC1-en megadott domain-nevedet helyettesítsd
             -InstallDns:$true `
             -LogPath "C:\Windows\NTDS" `
             -DatabasePath "C:\Windows\NTDS" `
