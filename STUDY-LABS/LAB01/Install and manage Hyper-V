@@ -253,7 +253,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         Válaszd ki az "Image file (.iso)" opciót, majd böngészd ki és válaszd ki az ISO fájlt,
         amit az operációs rendszer telepítéséhez szeretnél használni.
         
-        Ezt megtalálhatod a "Z:\WindowsServer22.iso" hálózati meghajtón.
+        Ezt megtalálhatod a "C:\Tools" mappában. (2022_SERVER_EVAL_x64FRE_en-us.iso)
 
         Kattints a "Browse" gombra az ISO fájl kiválasztásához.
 
@@ -326,7 +326,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         Válaszd ki az "Image file (.iso)" opciót, majd böngészd ki és válaszd ki az ISO fájlt,
         amit az operációs rendszer telepítéséhez szeretnél használni.
         
-        Ezt megtalálhatod a "Z:\WindowsServer22.iso" hálózati meghajtón.
+        Ezt megtalálhatod a "C:\Tools" mappában. (2022_SERVER_EVAL_x64FRE_en-us.iso)
 
         Kattints a "Browse" gombra az ISO fájl kiválasztásához.
 
@@ -399,7 +399,7 @@ A csapatoddal együtt tervezitek kiértékelni a Windows Server virtuális gépe
         Válaszd ki az "Image file (.iso)" opciót, majd böngészd ki és válaszd ki az ISO fájlt,
         amit az operációs rendszer telepítéséhez szeretnél használni.
         
-        Ezt megtalálhatod a "Z:\WindowsServer22.iso" hálózati meghajtón.
+        Ezt megtalálhatod a "C:\Tools" mappában. (2022_SERVER_EVAL_x64FRE_en-us.iso)
 
         Kattints a "Browse" gombra az ISO fájl kiválasztásához.
 
