@@ -65,7 +65,9 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
             Bérleti Idő: Állítsd a bérleti időt 1 napra (24 órára).
 
             Konfiguráld a DHCP beállításait, beleértve az alapértelmezett átjárót (default gateway),
-            ami például lehet 192.168.1.1, és a DNS szerverek címeit.
+            ami például lehet 192.168.1.1
+            
+            A DNS szerverek címeit magától kitölti.
 
         Scope Aktiválása
 
