@@ -24,7 +24,7 @@ Te mint a szerverekért felelős szakértő, a te feladatod lesz az AD DS telep�
 
         Célszerver kiválasztása: Válaszd ki azt a szervert vagy virtuális hardvert, amelyre az AD DS-t telepíteni szeretnéd.
 
-        Szerepkörök kiválasztása: Jelöld be az "Active Directory Domain Services" lehetőséget. A rendszer felajánlhatja a szükséges funkciók telepítését – fogadd el ezeket.
+        Szerepkörök kiválasztása: Jelöld be az "Active Directory Domain Services" lehetőséget, majd Jelöld ki a "DNS Server" opciót is. A rendszer felajánlhatja a szükséges funkciók telepítését – fogadd el ezeket.
 
         Telepítés: Ellenőrizd a kiválasztott beállításokat, és kattints a "Telepítés" (Install) gombra. Várj, amíg a telepítés befejeződik.
 
