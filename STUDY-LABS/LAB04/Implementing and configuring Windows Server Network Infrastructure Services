@@ -114,7 +114,8 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
         Állíts be egy nevet a failover kapcsolatnak, és add meg a készenléti beállításokat,
         mint például a maximális ügyfélszolgálati idő (Maximum Client Lead Time - MCLT), 
         állapotlekérdezési időköz és az automatikus állapotváltás beállításait.
-        
+        Állíts be egy tetszőleges shared Secretet.
+
         Kattints a Finish gombra a beállítások mentéséhez és a failover kapcsolat aktiválásához.
 
     VAGY
