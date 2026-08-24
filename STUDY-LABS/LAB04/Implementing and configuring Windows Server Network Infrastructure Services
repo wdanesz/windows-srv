@@ -46,7 +46,7 @@ egyik részlege – rendelkezzen saját DNS szerverrel a tesztelési területen.
 
         Új Scope Létrehozása
 
-        A DHCP szerveren belül kattints jobb gombbal a "Scopes" mappára, és válaszd az "Új Scope" (New Scope) opciót.
+        A DHCP szerveren belül, nyisd le a DHCP szervered kattints jobb gombbal az "IPv4" mappára, és válaszd az "Új Scope" (New Scope) opciót.
         
         Indítsd el a New Scope Varázslót.
 
