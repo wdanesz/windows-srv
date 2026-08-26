@@ -111,7 +111,7 @@ Ebben az összefüggésben a vállalat IT osztálya felismerte a céges eszköz�
         Kattints jobb gombbal az újonnan létrehozott GPO-ra, és válaszd a Edit opciót.
 
         A Group Policy Management Editor-ban navigálj a 
-        User Configuration > Policies > Administrative Templates > Microsoft Outlook 2016 vagy az aktuális verziódhoz > Miscellaneous
+        User Configuration > Policies > Administrative Templates > Microsoft Outlook 2016 vagy az aktuális verziódhoz > Miscellaneous > Prevent Users from adding e-mail account types
 
         Keresd meg és kattints duplán a Disable POP3 és Disable IMAP beállításokra egyenként, és állítsd mindkettőt Enabled-re.
 
