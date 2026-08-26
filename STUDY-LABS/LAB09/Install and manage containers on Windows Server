@@ -31,13 +31,15 @@ Labor megoldásához szükséges idő: 15 perc
         Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -OutFile install-docker-ce.ps1
         .\install-docker-ce.ps1
 
-        Mivel a laborkörnyezetben nincs internetelérés, ezért a Z: meghajtóra előkészített offline csomagot, és preparált telpítőt fogjuk használni.
+        Mivel a laborkörnyezetben nincs internetelérés, ezért a C:\Tools-ban  előkészített offline csomagot, és preparált telpítőt fogjuk használni.
 
-        Másold a célszerverre a Z: meghasjtóról a docker-17.06.2-ee-7.zip és install-docker-ce.ps1 fileokat. Mindenképp egy mappába tedd őket.
+        Másold a célszerverre a C:\Tools-ról a docker-17.06.2-ee-7.zip és install-docker-ce.ps1 illetve a hello-worldcontainerimage.tar fileokat. Mindenképp egy mappába tedd őket.
 
         Nyisd meg a PowerShell-t rendszergazdaként.
 
-        Navigálj a mappába ahol az átmásolt fileok találkatóak, majd a ./install-docker-ce.ps1 parancs segítségével futtasd a ps1 filet.
+        Add ki ezt a panacsot: Set-ExecutionPolicy -ExecutionPolicy Unrestricted Kérdés esetén "A"-t válassz.
+
+        Navigálj a mappába ahol az átmásolt fileok találkatóak, majd a ./install-docker-ce.ps1 parancs segítségével futtasd a ps1 filet. Kérdés esetén "R"-t válassz.
 
         Indítsd újra a szervert a változások érvényesítéséhez:
 
@@ -45,7 +47,7 @@ Labor megoldásához szükséges idő: 15 perc
 
     3. lépés: Docker szolgáltatás indítása
 
-        Miután újraindítottad a szervert, ellenőrizd a Docker szolgáltatás állapotát:
+        Miután újraindítottad a szervert, ellenőrizd a Docker szolgáltatás állapotát Powershell-ben:
 
         Get-Service Docker
 
@@ -61,7 +63,7 @@ Labor megoldásához szükséges idő: 15 perc
 
         Most már készen állsz arra, hogy futtass egy "Hello World" konténert, ami igazolja, hogy a Docker helyesen van telepítve és működik.
 
-        Normál esetben ehhez elég lenne a docker run hello-world parancs futtatása, jelen esetben a Z: meghajtón lévő hello-worldcontainerimage.tar file-ra lesz szükségünk, másoljuk át a szerverünkre egy tetszőleges helyre.
+        Normál esetben ehhez elég lenne a docker run hello-world parancs futtatása, jelen esetben a hello-worldcontainerimage.tar file-ra lesz szükségünk.
 
         Nyisd meg ismét a PowerShell-t rendszergazdaként.
 
@@ -75,7 +77,7 @@ Labor megoldásához szükséges idő: 15 perc
 
         Ezután a docker run hello-world paranccsal el tudunk indítani egy konténert a konténer image-ből.
 
-        Ha minden rendben ment, látnod kellene egy üzenetet, ami megerősíti, hogy a Docker helyesen működik,
+        Ha minden rendben ment, látnod kellene egy üzenetet (Hello from Docker! kezdetű), ami megerősíti, hogy a Docker helyesen működik,
         és a "Hello World" konténer fut.
 
 
