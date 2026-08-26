@@ -159,9 +159,9 @@ amelyeket a magas rendelkezésre állásnak meg kell felelnie.
 
         Deduplikáció Futtatása Manuálisan (Opcionális)
 
-        Bár a deduplikáció automatikusan fut, manuálisan is elindíthatod a folyamatot a
-        Server Manager > "File and Storage Services" > "Volumes" alatt, a kötet jobb gombbal történő kiválasztásával
-        és a "Start Deduplication Job" opcióval.
+        Bár a deduplikáció automatikusan fut, manuálisan is elindíthatod a folyamatot az alábbi PowerShell paranccsal:
+
+        Start-DedupJob -Volume "E:" -Type Optimization
 
         Szabad Tárhely Ellenőrzése Deduplikáció Után
 
@@ -193,13 +193,15 @@ amelyeket a magas rendelkezésre állásnak meg kell felelnie.
 
         Kattints a "To create an iSCSI virtual disk, start the New iSCSI Virtual Disk Wizard" linkre.
 
-        Válaszd ki a lemezt vagy partíciót, ahol az iSCSI virtuális lemezt létre szeretnéd hozni,
-        adj meg egy nevet a virtuális lemeznek, és állítsd be a méretét.
+        Válaszd ki a lemezt vagy partíciót, ahol az iSCSI virtuális lemezt létre szeretnéd hozni (E: ajánlott),
+        adj meg egy nevet a virtuális lemeznek, és állítsd be a méretét, 1GB elég.
 
         Cél (Target) Konfigurálása
 
         Adj meg egy nevet az iSCSI cél számára, és add hozzá az iSCSI iniciátorokat (pl. egy másik szerver),
-        amelyek hozzáférhetnek ehhez a tárolóhoz.
+        amelyek hozzáférhetnek ehhez a tárolóhoz a browse segítségével a nevét beírva.
+
+        A többi lépésben megfelelőek a beállítások, a Create segítségével futtasuk le a konfigurációt.
 
     3. Lépés
     
