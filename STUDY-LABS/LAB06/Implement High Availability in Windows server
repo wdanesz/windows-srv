@@ -101,8 +101,10 @@ Emellett felelős vagy a kudarcálló klaszter konfigurációjának tervezésé�
         Nyisd meg a Server Manager-t, válaszd a "File and Storage Services" menüpontot, majd kattints az "iSCSI" fülre.
 
         Új iSCSI Cél (Target) Létrehozása
+
+        Ha nem jelenne meg a diszk akkor frissíts egyet.
         
-        Kattints a "To create an iSCSI virtual disk, start the New iSCSI Virtual Disk Wizard" linkre. Válaszd ki az egyik előzőleg létrehozott virtuális lemezt a listából, és kattints a "Next" gombra.
+        Kattints a megjelent diszkre.és válaszd az "Assign iSCSI Virtual Disk opciót."
 
         Cél (Target) Neve
         
