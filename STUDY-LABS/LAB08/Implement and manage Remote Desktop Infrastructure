@@ -34,25 +34,33 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
         Kattintsunk a "New" > "Virtual Machine" opcióra.
         
         Kövessük a varázsló utasításait: adjunk nevet a gépnek (pl. RDS1 és RDS2), válasszuk a Generation 2-t,
-        állítsuk be a memóriát 4 GB-ra, válasszunk vagy hozzunk létre virtuális switchet a hálózati adapter számára.
+        állítsuk be a memóriát 4096MB-ra, válasszunk  virtuális switchet a hálózati adapter számára (NAT Switch).
 
         Hozzunk létre új virtuális merevlemezt 40 GB mérettel.
         
         Válasszuk az ISO fájlt a Windows Server telepítéséhez, és fejezzük be a virtuális gép létrehozását.
 
+        Utólag adjunk hozzájuk még egy plusz processzormagot.
+
     2. Lépés
 
-        Telepítsük a Windows Servert, állítsuk be a szükséges alapkonfigurációkat, és léptessük be a szervereket a domainbe.
+        Telepítsük a Windows Servert, állítsuk be a szükséges alapkonfigurációkat: 
+
+        Állítsunk be a hálózatot a többi szerver mintájára, nevezzük át a gépeket és léptessük be a szervereket a domainbe.
+
+        Az újraindítás után figyeljünk hogy ne local, hanem domain adminként jelentkezzünk be a gépbe domaninnév\administrator
     
-        RDS Szerepkörök Telepítése és Konfigurálása az RDS1 szerveren.
+        RDS Szerepkörök Telepítése és Konfigurálása az RDS1 szerveren. Server Manager > Add Roles and Features > Remote Desktop Services
     
-        Elsődleges Szerver (RDS1) - Connection Broker, Session Host, Web Szerver
+        Elsődleges Szerver (RDS1) - Connection Broker, Session Host, Web Access Rolokat válasszuk ki ,a többi beállítás lehet az alap.
+
+        A szerver újraindítást fog kérni a telepítés befelyezéséhez.
 
         Adjuk hozzá az RDS2 szerverünket a Manage > Add Server menüpont alatt.
 
-        Szerverkezelő és Szerepkörök Telepítése
+        Szerverkezelő és Szerepkörök Telepítése:
         
-        Nyissuk meg a Szerverkezelőt, válasszuk a "Add Roles and Features" lehetőséget.
+        Nyissuk meg a Szerver Manager Add Roles and Featue Wizardot
         
         Az "Installation type" szekción belül válasszuk ki a "Remote Desktop Services intallation" lehetőséget,
         majd a telepítés típusaként válasszuk a "Standard Deployment" opciót.
@@ -69,7 +77,9 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
 
         A Server Managerben a Remote Destop Services alatt a Collections menü alatt, jobb oldalon a Tasks pontot megnyomva vállasszuk a Create Session Collection-t
 
-        Nevezzük el pl: Coll1-nek. Az alap beállításokon egyedül a User Profile Disks alatt kell módosítanunk, ha be van pipálva, vegyük ki a pipát.
+        Nevezzük el pl: Coll1-nek. Adjuk hozzá a két RDS szerverünket mint Session Host. 
+    
+        Az alap beállításokon egyedül a User Profile Disks alatt kell módosítanunk, ha be van pipálva, vegyük ki a pipát.
 
     1. Lépés: Alkalmazás Publikálása a RemoteApp Manager-ben
 
@@ -104,6 +114,8 @@ az alkalmazást anélkül, hogy teljes asztali környezetet kellene használniuk
         Bármelyik szerveren pl DC1, használjuk a "RD Web Access" szolgáltatást a változások ellenőrzésére.
 
         Nyissuk meg a webböngészőt, és írjuk be az RDS1 Web Access URL-jét (pl. http://rds1.Contoso.local/RDWeb).
+
+        Valószínűleg nem fogja megjeleníteni a weboldalt cert probléma miatt, ebben az esetben töltsünk le egy Firefoxot, azzal működni fog a teszt.
 
         Jelentkezzünk be egy olyan felhasználóval, aki tagja a "Domain Admins" csoportnak, és ellenőrizzük,
         hogy a Számológép alkalmazás elérhető-e.
