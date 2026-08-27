@@ -104,7 +104,7 @@ Emellett felelős vagy a kudarcálló klaszter konfigurációjának tervezésé�
 
         Ha nem jelenne meg a diszk akkor frissíts egyet.
         
-        Kattints a megjelent diszkre.és válaszd az "Assign iSCSI Virtual Disk opciót."
+        Kattints a megjelent diszkre és válaszd az "Assign iSCSI Virtual Disk opciót."
 
         Cél (Target) Neve
         
@@ -208,14 +208,14 @@ Emellett felelős vagy a kudarcálló klaszter konfigurációjának tervezésé�
         A "Before You Begin" oldalon kattints a "Next" gombra. A "Select Servers" oldalon adj hozzá szervereket 
         az FS1 és FS2 név vagy IP-cím alapján, majd kattints a "Next" gombra.
 
+        Validálás és Létrehozás
+        
+        Futass egy klaszter-validálást, ha a varázsló kéri. Ha minden teszt sikeres, folytasd a klaszter létrehozását a "Finish" gombra kattintva.
+
         Klaszter Beállításainak Konfigurálása
         
         Adj meg egy nevet, illetve IP címet a klaszternek.
         Kövesd a varázsló utasításait a klaszter beállításainak konfigurálásához.
-
-        Validálás és Létrehozás
-        
-        Futass egy klaszter-validálást, ha a varázsló kéri. Ha minden teszt sikeres, folytasd a klaszter létrehozását a "Finish" gombra kattintva.
         
         Ha a varázsló sikeresen lefutott, és létrejött a klaszter, adjuk hozzá a diszkeket mint klaszter erőforrás.
         A frissen létrejött klaszterünket kibontva a Storage > Disks alatt hozzá tudjuk adni a diszkeket az Add Disk segítségével.
